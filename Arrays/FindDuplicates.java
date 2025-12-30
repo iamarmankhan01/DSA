@@ -3,11 +3,11 @@ import java.util.*;
 public class FindDuplicates {
 
     public static void findDuplicates(int[] arr) {
-        Set<Integer> seen = new HashSet<>();
+        Set<Integer> real = new HashSet<>();
         Set<Integer> duplicates = new HashSet<>();
 
         for (int num : arr) {
-            if (!seen.add(num)) {
+            if (!real.add(num)) {
                 duplicates.add(num);
             }
         }

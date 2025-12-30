@@ -19,7 +19,6 @@ public class MoveZeros {
         int[] arr = {0, 1, 0, 3, 12};
 
         moveZerosToEnd(arr);
-
         for (int num : arr) {
             System.out.print(num + " ");
         }
